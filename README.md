@@ -1,1 +1,3 @@
-# kvalazalia
+# Автор Хисамова Азалия 305ИИС
+
+https://wokwi.com/projects/461527314994916353
