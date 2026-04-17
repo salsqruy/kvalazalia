@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "author": "Азалия Хисамова",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -47.4, "left": -115.8, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -28.9,
+      "left": 233.9,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-lcd2004",
+      "id": "lcd1",
+      "top": -281.6,
+      "left": 120.8,
+      "attrs": { "pins": "i2c" }
+    }
+  ],
+  "connections": [
+    [ "btn1:1.l", "uno:GND.1", "black", [ "v-51.3", "h-96", "h-138.2" ] ],
+    [ "lcd1:SDA", "uno:A4", "gold", [ "v0.2", "h-230.4", "v412.8", "h235.8" ] ],
+    [ "lcd1:SCL", "uno:A5", "blue", [ "h-220.8", "v413.1", "h235.7" ] ],
+    [ "lcd1:VCC", "uno:5V", "red", [ "v0.1", "h-240", "v412.8", "h159.4" ] ],
+    [ "lcd1:GND", "uno:GND.2", "black", [ "h-249.6", "v412.8", "h178.5" ] ],
+    [ "btn1:2.r", "uno:2", "green", [ "v-41.5", "h-19.4" ] ]
+  ],
+  "dependencies": {}
+}
